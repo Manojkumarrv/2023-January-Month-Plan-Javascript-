@@ -43,3 +43,19 @@ Let number = kvArray.map(({key,value}) => {
 });
 
 Result: [{ 1: 10 }, { 2: 20 }, { 3: 30 }]
+
+call() is used to call the function if an object is used as an argument into an function call() should be used to call the object into the function
+
+function animal() {
+    console.log(this.dog,' sleeps ',this.timeInterval);
+}
+
+let obj = {
+    dog : 'wanda',
+    timeInterval : 'between 10 to 12 hours a day'
+} 
+
+animal.call(obj);
+
+
+Result: wanda  sleeps  between 10 to 12 hours a day
