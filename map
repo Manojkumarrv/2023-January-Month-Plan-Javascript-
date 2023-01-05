@@ -1,0 +1,45 @@
+Syntax of map in javascript
+
+In arrow function : 
+Here we can pass index,element and the whole array as an argument into the function
+map((element) => {........./})
+map((element,index) => {........./……./})
+map((element,index,array) => {........./……./……/})
+
+Here in map method creates an new array and it calls every element in an provided array 
+
+Ex1: 
+const map = [1,2,3,4];
+ console.log(map.map(element => element * 2 ));
+
+Result : [2,4,6,8];
+
+Ex2: 
+let number = [1, ,2,5]
+number.map((element,index) => {
+    console.log(element * 3);
+    console.log('index',index * 6);
+} );
+
+Result: 
+3
+index 0
+6
+index 12
+15
+index 18
+
+Using map to change objects in an array in this example below lets take an array of object and reform it into an new array
+
+Ex1: 
+const kvArray = [
+  { key: 1, value: 10 },
+  { key: 2, value: 20 },
+  { key: 3, value: 30 },
+];
+
+Let number = kvArray.map(({key,value}) => {
+[key] : value; 
+});
+
+Result: [{ 1: 10 }, { 2: 20 }, { 3: 30 }]
