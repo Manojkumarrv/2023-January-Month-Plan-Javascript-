@@ -6,6 +6,7 @@ map((element) => {........./})
 map((element,index) => {........./……./})
 map((element,index,array) => {........./……./……/})
 
+****************************************************************************************************************
 Here in map method creates an new array and it calls every element in an provided array 
 
 Ex1: 
@@ -28,7 +29,7 @@ index 0
 index 12
 15
 index 18
-
+*********************************************************************************************************************************
 Using map to change objects in an array in this example below lets take an array of object and reform it into an new array
 
 Ex1: 
@@ -43,6 +44,8 @@ Let number = kvArray.map(({key,value}) => {
 });
 
 Result: [{ 1: 10 }, { 2: 20 }, { 3: 30 }]
+
+****************************************************************************************************************************************
 
 call() is used to call the function if an object is used as an argument into an function call() should be used to call the object into the function
 
